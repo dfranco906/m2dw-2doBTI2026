@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas</title>
+    <style>
+        table,
+        tr,
+        td,
+        th {
+            border: solid 1px blue;
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            font-family: cursive;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 5px;
+            outline: none;
+        }
+
+        label {
+            line-height: 1.9rem;
+        }
+
+        input[type="submit"] {
+            transform: translate(2.2%);
+            padding: 3px;
+            margin-top: 0.6rem;
+            font-family: cursive;
+            font-weight: bold;
+        }
+
+        fieldset {
+            padding: 20px 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <h1>TABLAS EN HTML</h1>
+    <hr>
+    <table>
+        <tr> 
+            <th>Nro.</th> 
+            <th>Nombre</th>
+            <th>Apellido</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Danilo</td>
+            <td>Franco</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Guillermo</td>
+            <td>Nogueras</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Lucas</td>
+            <td>Quintanex</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Heraldus</td>
+            <td>Rojas</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>La jefa</td>
+            <td>Serna</td>
+        </tr>
+    </table> -->
+    <hr>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>INPUT DE TIPO TEXTO</legend>
+            <label for="inNombre">Nombre:</label>
+            <input type="text" placeholder="Ingresa tu nombre..." id="inNombre"> <br>
+            <label for="inApellido">Apellido:</label>
+            <input type="text" placeholder="Ingresa tu apellido..." id="inApellido"> <br>
+            <label for="inPassword">Password:</label>
+            <input type="password" id="inPassword"> <br>
+            <label for="inEmail">Email:</label>
+            <input type="email" id="inEmail" placeholder="Ingresar email..."> <br>
+            <label for="inNumero">Numero:</label>
+            <input type="number" id="inNumero"> <br>
+            <label for="">Sexo:</label>
+            <input type="radio"> <span>Masculino</span>
+            <input type="radio"> <span>Femenino</span><br>
+
+            <label for="">Colores favoritos:</label>
+            <input type="checkbox"> <span>Rojo</span>
+            <input type="checkbox"> <span>Azul</span>
+            <input type="checkbox"> <span>Negro</span><br>
+
+            <input type="submit" value="Click para enviar!"><br>
+            <input type="button" value="ENVIAR!"><br>
+
+            <input type="file"><br>
+
+            <input type="color"> <br>
+            <input type="search"> <br>
+            <input type="url"><br>
+            <input type="tel"><br>
+            <input type="date"> <br>
+            <input type="datetime-local"> <br>
+            <input type="week"> <br>
+            <input type="month"> <br>
+            <textarea cols="20" rows="5"></textarea> <br>
+            <select>
+                <option value="HTML">--Selecciona un lenguaje--</option>
+                <option value="HTML">HTML</option>
+                <option value="CSS">CSS</option>
+                <option value="JAVASCRIPT">JavaScript</option>
+                <option value="PHP">PHP</option>
+            </select>
+        </fieldset>
+
+    </form>
+</body>
+
+</html>
