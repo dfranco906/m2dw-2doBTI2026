@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro</title>
+    <style>
+        /* Estilos para replicar la imagen */
+        body {
+            font-family: "Times New Roman", Times, serif; /* Fuente serif clásica */
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            background-color: #b5c7d9; /* El color azul grisáceo de fondo */
+            border: 1px solid #000;    /* Borde negro exterior */
+            padding: 10px;
+            width: 800px;             /* Ancho aproximado según la captura */
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        td {
+            padding: 5px 10px;
+            vertical-align: middle;
+        }
+
+        /* Columna de etiquetas */
+        .label-col {
+            width: 150px;
+            font-size: 1.2rem;
+            color: #000;
+        }
+
+        /* Estilo de los inputs de texto */
+        input[type="text"] {
+            width: 100%;
+            padding: 4px;
+            border: 1px solid #767676;
+            box-sizing: border-box; /* Para que el padding no afecte el ancho */
+        }
+
+        /* Estilo del input de archivo */
+        .file-input-container {
+            display: flex;
+            align-items: center;
+            font-size: 0.9rem;
+        }
+
+        input[type="file"] {
+            font-family: Arial, sans-serif;
+            font-size: 13px;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <form>
+        <table>
+            <tr>
+                <td class="label-col">DNI</td>
+                <td><input type="text" name="dni"></td>
+            </tr>
+            <tr>
+                <td class="label-col">Foto</td>
+                <td>
+                    <div class="file-input-container">
+                        <input type="file" name="foto">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="label-col">Nombres</td>
+                <td><input type="text" name="nombres"></td>
+            </tr>
+            <tr>
+                <td class="label-col">Apellidos</td>
+                <td><input type="text" name="apellidos"></td>
+            </tr>
+        </table>
+    </form>
+</div>
+
+</body>
+</html>

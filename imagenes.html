@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagenes</title>
+</head>
+<body>
+    <h1>IMAGENES EN HTML</h1>
+    <hr>
+    <section>
+        <img src="smile_540x540.png" 
+        alt="Imagen de cubo sonriente."
+        title="Cubo de color rojo sonriente con pestañas."
+        >
+    </section>
+    <section>
+        <picture>
+            <source media="(width >= 1200px)" 
+            srcset="image/perroHermanos.jpg">
+            <source media="(width >= 700px)"
+            srcset="image/perroCanela.jpg">
+            <img src="image/perroPug.avif" alt="perrito pug">
+        </picture>
+    </section>
+</body>
+</html>
